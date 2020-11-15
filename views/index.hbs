@@ -1,1 +1,353 @@
-<h1>Главная страница</h1>
+<nav id="topnav" class="navbar-fixed-top navbar-transparent">
+	<div class="container">
+		<a class="logo" href="/">
+			noSQL
+		</a>
+		<div class="menu-extras">
+			<div class="menu-item">
+				<a class="navbar-toggle">
+					<div class="lines">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="navigation">
+			<ul class="navigation-menu">
+				<li>
+					<a class="nav-link" href="#what">Что это такое?</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#where">Где применяются?</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#features">Особенности</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#materials">Материалы</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#dbms">Популярные СУБД</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<header class="bg-half-170 d-table w-100">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-7 col-md-7">
+				<div class="title-heading mt-4">
+					<h1 class="heading mb-3">Нереляционные базы данных</h1>
+					<p class="para-desc text-muted">
+						Высокопроизводительные базы данных с гибкими моделями данных<br/>от англ. not only SQL — не
+						только SQL
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+				<img id="img-slider" src="/assets/img/documents.svg" alt="">
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+	<section id="what" class="section bg-light border-top">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<div class="section-title mb-4 pb-2">
+						<h4 class="title mb-4">Что это такое?</h4>
+						<p class="text-muted para-desc mb-0 mx-auto">
+							Это база данных, в которой в отличие от большинства традиционных систем баз данных <span
+								class="text-primary font-weight-bold">не используется табличная
+							схема строк и столбцов</span>.<br/>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-4 col-md-6 mt-4 pt-2">
+					<img src="/assets/img/nosql.svg" alt="" height="250">
+				</div>
+				<div class="col-lg-7 col-md-6 mt-4 pt-2">
+					<div class="section-title ml-lg-5">
+						<p class="text-muted">В этих базах данных NoSQL применяется модель хранения, оптимизированная
+							под конкретные
+							требования типа хранимых данных.</p><p class="text-muted">Базы данных призваны помочь разработчикам быстро
+							создавать системы баз данных для хранения данных, а также сделать их доступными для поиска,
+							консолидации и анализа. <p class="text-muted">Данный тип баз данных получили широкое распространение в
+							связи c:</p>
+						<ul class="list-unstyled text-muted">
+							<li class="mb-0">
+								<div class="icon text-center rounded-circle text-primary mr-2"><i
+										class="fas fa-check fa-xs"></i></div>
+								простотой разработки
+							</li>
+							<li class="mb-0">
+								<div class="icon text-center rounded-circle text-primary mr-2"><i
+										class="fas fa-check fa-xs"></i></div>
+								функциональностью
+							</li>
+							<li class="mb-0">
+								<div class="icon text-center rounded-circle text-primary mr-2"><i
+										class="fas fa-check fa-xs"></i></div>
+								производительностью при любых масштабах
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="where" class="section bg-light border-top" data-jarallax='{"speed": 0.5}'
+			style="background: url('/assets/img/db-parallax.jpg') center center;">
+		<div class="bg-overlay bg-overlay-gradient"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<div class="section-title">
+						<h2 class="title text-white mb-4">Где применяются?</h2>
+						<p class="text-light para-desc para-dark mx-auto">Базы данных NoSQL хорошо подходят для многих
+							современных приложений, например мобильных, игровых, интернет‑приложений, когда требуются
+							гибкие масштабируемые базы данных с высокой производительностью и широкими функциональными
+							возможностями.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-3 col-md-4 mt-4 pt-2">
+					<div class="card features rounded-md p-4 px-md-3 bg-light text-center border-0 shadow">
+                            <span class="h1 icon2 text-primary">
+                                <i class="far fa-users"></i>
+                            </span>
+						<div class="card-body p-0 content">
+							<h5>Социальные сети</h5>
+							<p class="para text-muted mb-0">Хранение и обработка пользовательских данных.</p>
+						</div>
+						<span class="big-icon text-center">
+                                <i class="uil uil-chart-line"></i>
+                            </span>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 mt-4 pt-2">
+					<div class="card features rounded-md p-4 px-md-3 bg-light text-center border-0 shadow">
+                            <span class="h1 icon2 text-primary">
+                                <i class="far fa-gamepad-alt"></i>
+                            </span>
+						<div class="card-body p-0 content">
+							<h5>Игры</h5>
+							<p class="para text-muted mb-0">Создание гибких моделей данных.</p>
+						</div>
+						<span class="big-icon text-center">
+                                <i class="uil uil-crosshairs"></i>
+                            </span>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 mt-4 pt-2">
+					<div class="card features rounded-md p-4 px-md-3 bg-light text-center border-0 shadow">
+                            <span class="h1 icon2 text-primary">
+                                <i class="far fa-sitemap"></i>
+                            </span>
+						<div class="card-body p-0 content">
+							<h5>Big Data</h5>
+							<p class="para text-muted mb-0">Сбор больших объемов данных.</p>
+						</div>
+						<span class="big-icon text-center">
+                                <i class="uil uil-airplay"></i>
+                            </span>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 mt-4 pt-2">
+					<div class="card features rounded-md p-4 px-md-3 bg-light text-center border-0 shadow">
+                            <span class="h1 icon2 text-primary">
+                                <i class="far fa-search"></i>
+                            </span>
+						<div class="card-body p-0 content">
+							<h5>Поисковые системы</h5>
+							<p class="para text-muted mb-0">Параллельная обработка больших данных.</p>
+						</div>
+						<span class="big-icon text-center">
+                                <i class="uil uil-rocket"></i>
+                            </span>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-12 text-center">
+					<h6 class="text-white">И во многих других сферах</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="features" class="section bg-light">
+		<div class="container mt-100 mt-60">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<div class="section-title mb-4 pb-2">
+						<h2 class="title mb-4">Ключевые особенности</h2>
+						<p class="text-muted para-desc mb-0 mx-auto">
+							И преимущества использования баз данных NoSQL.
+						</p>
+					</div>
+				</div>
+			</div>
+			<p class="text-muted mb-4">
+				Базы данных NoSQL помогают ИТ-специалистам и разработчикам справляться с новыми задачами в
+				условиях растущего разнообразия моделей и типов данных. Кроме того, они обеспечивают крайне
+				эффективную обработку непредсказуемых данных, часто с невероятно высокими скоростями. Они
+				также обеспечивают удобный перенос баз данных в облако для имеющихся рабочих нагрузок NoSQL.
+			</p>
+			<div class="row">
+				<div class="col-md-6 col-12">
+					<div class="media features pt-4 pb-4">
+						<div class="icon text-center rounded-circle text-primary mr-3 mt-2">
+							<i class="fas fa-file-chart-line"></i>
+						</div>
+						<div class="media-body">
+							<h4 class="title">Гибкость</h4>
+							<p class="text-muted para mb-0">Как правило, базы данных NoSQL предлагают гибкие
+								схемы, что позволяет осуществлять разработку быстрее и обеспечивает возможность
+								поэтапной реализации. Благодаря использованию гибких моделей данных БД NoSQL
+								хорошо подходят для частично структурированных и неструктурированных данных.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="media features pt-4 pb-4">
+						<div class="icon text-center rounded-circle text-primary mr-3 mt-2">
+							<i class="fas fa-sitemap"></i>
+						</div>
+						<div class="media-body">
+							<h4 class="title">Масштабируемость</h4>
+							<p class="text-muted para mb-0">Базы данных NoSQL рассчитаны на масштабирование с
+								использованием распределенных кластеров аппаратного обеспечения, а не путем
+								добавления дорогих надежных серверов. Некоторые поставщики облачных услуг
+								проводят эти операции в фоновом режиме, обеспечивая полностью управляемый
+								сервис.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="media features pt-4 pb-4">
+						<div class="icon text-center rounded-circle text-primary mr-3 mt-2">
+							<i class="far fa-tachometer-fast"></i>
+						</div>
+						<div class="media-body">
+							<h4 class="title">Высокая производительность</h4>
+							<p class="text-muted para mb-0">Базы данных NoSQL оптимизированы для конкретных
+								моделей данных и шаблонов доступа, что позволяет достичь более высокой
+								производительности по сравнению с реляционными базами данных.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="media features pt-4 pb-4">
+						<div class="icon text-center rounded-circle text-primary mr-3 mt-2">
+							<i class="fas fa-send-back"></i>
+						</div>
+						<div class="media-body">
+							<h4 class="title">Широкие функциональные возможности</h4>
+							<p class="text-muted para mb-0">Базы данных NoSQL предоставляют API и типы данных с
+								широкой функциональностью, которые специально разработаны для соответствующих
+								моделей данных.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="materials" class="section border-top">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<div class="section-title mb-4 pb-2">
+						<h2 class="title mb-4">Материалы</h2>
+						<p class="text-muted para-desc mx-auto mb-0">Ресурсы, представленные на данных страницах,
+							помогут более детально<br/>разобраться с базами данных <span
+									class="text-primary font-weight-bold">NoSQL</span> и начать работу с ними.
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+					<div class="card features explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+						<div class="icons rounded h2 text-center text-primary px-3">
+							<i class="fas fa-history"></i>
+						</div>
+						<div class="card-body p-0 content">
+							<h5 class="title text-dark mt-4">История появления</h5>
+							<p class="text-muted">Краткая история баз данных NoSQL: происхождение термина и причины
+								появления</p>
+							<a href="/history" class="text-primary">Читать <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+					<div class="card features explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+						<div class="icons rounded h2 text-center text-primary px-3">
+							<i class="fas fa-question"></i>
+						</div>
+						<div class="card-body p-0 content">
+							<h5 class="title text-dark mt-4">Сравнение с реляционными БД</h5>
+							<p class="text-muted">Аналитическое сравнение реляционных (SQL) и нереляционных баз данных
+								(NoSQL)</p>
+							<a href="/compare" class="text-primary">Читать <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+					<div class="card features explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+						<div class="icons rounded h2 text-center text-primary px-3">
+							<i class="fas fa-project-diagram"></i>
+						</div>
+						<div class="card-body p-0 content">
+							<h5 class="title text-dark mt-4">Типы баз данных NoSQL</h5>
+							<p class="text-muted">Существует множество типов БД NoSQL с различными особенностями
+								хранения и взаимодействия</p>
+							<a href="/types" class="text-primary">Читать <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div><!--end col-->
+			</div><!--end row-->
+		</div>
+	</section>
+	<section id="dbms" class="section bg-light border-top">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<div class="section-title mb-4 pb-2">
+						<h2 class="title mb-4">Популярные СУБД</h2>
+						<p class="text-muted para-desc mb-0 mx-auto">
+							СУБД (система управления базами данных) представляет собой комплекс ПО, с помощью которого
+							можно создавать базы данных (БД) и проводить над ними различные операции: обновлять,
+							удалять, выбирать, редактировать и т. д. СУБД гарантирует сохранность, целостность,
+							безопасность хранения данных и позволяет выдавать доступ к администрированию БД.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center text-center">
+				<div class="col-lg-3 col-md-3 col-6 py-4">
+					<img src="/assets/img/mongodb.svg" height="50" class="avatar avatar-ex-sm" alt="">
+				</div>
+				<div class="col-lg-3 col-md-3 col-6 py-4">
+					<img src="/assets/img/redis.svg" height="50" class="avatar avatar-ex-sm" alt="">
+				</div>
+				<div class="col-lg-3 col-md-3 col-6 py-4">
+					<img src="/assets/img/cassandra.svg" height="55" class="avatar avatar-ex-sm" alt="">
+				</div>
+				<div class="col-lg-3 col-md-3 col-6 py-4">
+					<img src="/assets/img/couchdb.svg" height="60" class="avatar avatar-ex-sm" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<script src="/assets/js/jarallax.min.js"></script>

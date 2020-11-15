@@ -32,4 +32,22 @@ app.get('/', function (request, response) {
 	})
 })
 
+app.get('/compare', function (request, response) {
+	response.render('compare', {
+		title: 'Сравнение'
+	})
+})
+
+app.get('/types', function (request, response) {
+	response.render('types', {
+		title: 'Типы'
+	})
+})
+
+app.get('/history', function (request, response) {
+	response.render('history', {
+		title: 'История появления'
+	})
+})
+
 app.listen(8080)

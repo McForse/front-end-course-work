@@ -1,0 +1,161 @@
+<nav id="topnav" class="navbar-fixed-top navbar-transparent">
+	<div class="container">
+		<a class="logo" href="/">
+			noSQL
+		</a>
+		<div class="menu-extras">
+			<div class="menu-item">
+				<a class="navbar-toggle">
+					<div class="lines">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="navigation">
+			<ul class="navigation-menu">
+				<li class="has-submenu">
+					<a href="/">Главная страница</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<section class="bg-half bg-light d-table w-100">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10">
+				<div class="title-heading text-center mt-4">
+					<h1 class="heading mb-3 mt-5">Типы баз данных NoSQL</h1>
+					<p class="para-desc mx-auto text-muted">Большинство нереляционных баз данных высокой
+						производительности также могут обрабатывать данные со сложной структурой. При этом они <span class="text-primary font-weight-bold">не
+							привязаны к фиксированным моделям данных</span>, как реляционные базы данных (SQL).<br/>Вот четыре
+						наиболее распространенных типа баз данных NoSQL.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section border-bottom">
+	<div class="container">
+		<!--<div class="row justify-content-center">
+			<div class="col-12">
+				<div class="section-title text-center mb-4 pb-2">
+					<h4 class="mb-4">Что такое реляционные и нереляционные базы данных</h4>
+				</div>
+			</div>
+		</div>-->
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-5 col-md-6 mt-4 pt-2">
+				<img src="/assets/img/key-value.svg" alt="">
+			</div>
+			<div class="col-lg-7 col-md-6 mt-4 pt-2">
+				<div class="section-title ml-lg-5">
+					<h4 class="title mb-4">Базы данных ключ-значение</h4>
+					<p>Каждая запись имеет ключ и значение. Разработчики в основном используют такие базы данных, когда
+						данные не слишком сложные, а скорость является приоритетом. Например, это отличный выбор для
+						хранения данных конфигурации. Сохраненным данным не назначается никакой схемы, а сама база
+						данных намного легче по сравнению с реляционной.</p>
+					<p>Пример такой базы данных: <span class="font-weight-bold"><a href="https://redis.io/" class="text-primary" target="_blank">Redis</a></span>.</p>
+				</div>
+			</div>
+		</div>
+		<!--<div class="row justify-content-center mt-5">
+			<div class="col-9">
+				<table class="table table-striped">
+					<thead>
+					<tr>
+						<th scope="col">Ключ</th>
+						<th scope="col">Значение</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>USD</td>
+						<td>76,92</td>
+					</tr>
+					<tr>
+						<td>EUR</td>
+						<td>90,58</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>-->
+	</div>
+</section>
+<section class="section border-bottom bg-light">
+	<div class="container mt-100 mt-60">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-7 col-md-6 mt-4 pt-2">
+				<div class="section-title ml-lg-5">
+					<h4 class="title mb-4">Документоориентированные базы данных</h4>
+					<p>Данные хранятся в коллекциях документов, обычно с использованием форматов JSON, XML или BSON.
+						Одна запись может содержать столько данных, сколько нужно, в любом типе данных (или типах) —
+						ограничений нет. Внутри одного документа есть внутренняя структура, однако, она может отличаться
+						от одного документа к другому. Также документы можно вкладывать друг в друга.</p>
+					<p>То есть вместо столбцов и строк мы описываем все данные в одном документе. Если нам нужно было бы
+						добавить новые данные в таблицу реляционной базы данных, пришлось бы изменять ее схему данных. В
+						случае с документами нужно только добавить в них дополнительные пары ключ-значение.</p>
+					<p>Пример такой базы данных: <span class="font-weight-bold"><a href="https://www.mongodb.com/" class="text-primary" target="_blank">MongoDB</a></span>.</p>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-6 mt-4 pt-2 float-right">
+				<img src="/assets/img/json-files.svg" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section border-bottom">
+	<div class="container mt-100 mt-60">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-5 col-md-6 mt-4 pt-2">
+				<img src="/assets/img/graph.svg" alt="">
+			</div>
+			<div class="col-lg-7 col-md-6 mt-4 pt-2">
+				<div class="section-title ml-lg-5">
+					<h4 class="title mb-4">Графовые базы данных</h4>
+					<p>Cостоят из узлов и связей между ними. Узлы обозначают элементы в базе данных, а связи между ними
+						определяют их отношения между собой. Из всех типов баз данных эта является лучшим вариантом в
+						случаях, когда приоритетными являются различные взаимосвязи между данными.</p>
+					<p>Однако у графовых баз данных есть явный недостаток: хотя вам необходим язык запросов для доступа
+						к данным, вы не можете использовать ни SQL, ни какой-либо другой общепринятый подход. Отсутствие
+						стандартизации означает, что большинство языков запросов могут использоваться только в одном или
+						нескольких типах графовых баз данных.</p>
+					<p>Примеры таких баз данных: <span class="text-primary font-weight-bold"><a href="https://neo4j.com/" class="text-primary" target="_blank">Neo4j</a>, <a href="https://www.orientdb.org/" class="text-primary" target="_blank">OrientDB</a></span>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section bg-light">
+	<div class="container mt-100 mt-60">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-7 col-md-6 mt-4 pt-2">
+				<div class="section-title ml-lg-5">
+					<h4 class="title mb-4">Колоночные базы данных</h4>
+					<p>Хороший вариант для обработки больших данных, отличаются высокой производительностью, эффективным
+						сжатием данных и отличной масштабируемостью.</p>
+					<p>В таких системах данные хранятся в виде разреженной матрицы, строки и столбцы которой
+						используются как ключи. Подобно таблице, семейство столбцов содержит столбцы и строки. Тем не
+						менее есть четкое различие: столбец не охватывает все строки. Вместо этого он содержится в
+						строке, что также означает, что разные строки могут иметь разные столбцы.</p>
+					<p>Помимо столбцов, каждая строка также имеет идентификатор, называемый ключом, а каждый столбец
+						содержит имя, значение и метку времени. Проще говоря, в колоночной базе данных данные тоже
+						хранятся в таблице, только она состоит из совокупности колонок, каждая из которых, по сути,
+						отдельная таблица.</p>
+					<p>Это нужно, чтобы можно было быстрее получать данные из базы для анализа. Например, если вы хотите
+						извлечь сумму среднего чека клиента из реляционной СУБД, вам придется искать это значение в
+						каждой строке, а в колоночной СУБД можно сразу забрать информацию из нужной колонки.</p>
+					<p>Пример такой базы данных: <span class="text-primary font-weight-bold"><a href="https://cassandra.apache.org/" class="text-primary" target="_blank">Cassandra</a></span>.</p>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-6 mt-4 pt-2 float-right">
+				<img src="/assets/img/columnar-databases.svg" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+</section>

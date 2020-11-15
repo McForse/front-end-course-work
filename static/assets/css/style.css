@@ -575,6 +575,19 @@ features .icon,
 	transition: all 0.5s ease;
 }
 
+.owl-item .explore-feature {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+	background-color: #2f55d4 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	background: rgba(47, 85, 212, 0.5) !important;
+}
+
 .explore-feature .icon {
 	height: 80px;
 	width: 80px;

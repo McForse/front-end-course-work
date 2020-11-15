@@ -50,4 +50,16 @@ app.get('/history', function (request, response) {
 	})
 })
 
+app.get('/pros-cons', function (request, response) {
+	response.render('pros-cons', {
+		title: 'Плюсы и минусы'
+	})
+})
+
+app.get('/videos', function (request, response) {
+	response.render('videos', {
+		title: 'Видеоматериалы'
+	})
+})
+
 app.listen(8080)

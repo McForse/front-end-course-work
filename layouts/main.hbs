@@ -12,6 +12,9 @@
 	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.css" type="text/css">
+	<!-- Slider -->
+	<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 	<link rel="stylesheet" href="/assets/css/highlight.css" type="text/css">
@@ -36,5 +39,25 @@
 <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="/assets/js/scripts.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script>
+	$('#materials-carousel').owlCarousel({
+		margin: 20,
+		stagePadding: 15,
+		nav: false,
+		dots: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			1000: {
+				items: 3
+			}
+		}
+	})
+</script>
 </body>
 <html>

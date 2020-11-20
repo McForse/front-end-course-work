@@ -32,31 +32,37 @@ app.get('/', function (request, response) {
 	})
 })
 
-app.get('/compare', function (request, response) {
+app.get('/index.html', function (request, response) {
+	response.render('index', {
+		title: 'Главная страница'
+	})
+})
+
+app.get('/compare.html', function (request, response) {
 	response.render('compare', {
 		title: 'Сравнение'
 	})
 })
 
-app.get('/types', function (request, response) {
+app.get('/types.html', function (request, response) {
 	response.render('types', {
 		title: 'Типы'
 	})
 })
 
-app.get('/history', function (request, response) {
+app.get('/history.html', function (request, response) {
 	response.render('history', {
 		title: 'История появления'
 	})
 })
 
-app.get('/pros-cons', function (request, response) {
+app.get('/pros-cons.html', function (request, response) {
 	response.render('pros-cons', {
 		title: 'Плюсы и минусы'
 	})
 })
 
-app.get('/videos', function (request, response) {
+app.get('/videos.html', function (request, response) {
 	response.render('videos', {
 		title: 'Видеоматериалы'
 	})

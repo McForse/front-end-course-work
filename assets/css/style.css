@@ -103,10 +103,6 @@ button:focus {
 	margin: 0 10px
 }
 
-#topnav .navigation-menu > li:hover > a, #topnav .navigation-menu > li:active > a {
-	color: #2f55d4 !important
-}
-
 #topnav .navigation-menu > li > a {
 	display: block;
 	color: #3c4858;
@@ -122,7 +118,7 @@ button:focus {
 	padding-right: 8px
 }
 
-#topnav .navigation-menu > li > a:hover, #topnav .navigation-menu > li > a:active {
+#topnav .navigation-menu > li > a:hover, #topnav .navigation-menu > li > a.active {
 	color: #2f55d4 !important
 }
 
@@ -166,20 +162,6 @@ button:focus {
 
 	#topnav #navigation {
 		display: block !important
-	}
-
-	#topnav.scroll {
-		top: 0
-	}
-
-	#topnav.scroll .navigation-menu > li > a {
-		padding-top: 20px;
-		padding-bottom: 20px
-	}
-
-	#topnav.scroll-active .navigation-menu > li > a {
-		padding-top: 25px;
-		padding-bottom: 25px
 	}
 }
 
@@ -357,15 +339,16 @@ button:focus {
 	line-height: 20px
 }
 
-.features .icon,
-.features .icons {
-	background: rgba(47, 85, 212, 0.1)
-}
-
 .features .icons {
 	height: 80px;
 	line-height: 80px;
 	margin: 0 auto
+}
+
+.features .icon, .key-feature .icon {
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
 }
 
 .features .icon, .features .icons {
@@ -374,19 +357,6 @@ button:focus {
 
 .explore-feature {
 	transition: all 0.5s ease
-}
-
-.owl-item .explore-feature {
-	margin-top: 10px;
-	margin-bottom: 30px
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-	background-color: #2f55d4 !important
-}
-
-.owl-theme .owl-dots .owl-dot span {
-	background: rgba(47, 85, 212, 0.5) !important
 }
 
 .explore-feature .icon {
@@ -404,6 +374,21 @@ button:focus {
 .explore-feature:hover .icon,
 .explore-feature:hover .title {
 	color: #2f55d4 !important
+}
+
+/* owl carousel */
+
+.owl-item .explore-feature {
+	margin-top: 10px;
+	margin-bottom: 30px
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+	background-color: #2f55d4 !important
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	background: rgba(47, 85, 212, 0.5) !important
 }
 
 /* highlight.js */

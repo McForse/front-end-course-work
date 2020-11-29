@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<title>NoSQL - Сравнение с реляционными базами данных | Нереляционные базы данных</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="NoSQL technology">
+	<meta name="keywords" content="NoSQL, Database">
+	<meta name="author" content="Danil Vorozheykin">
+	<!-- Favicon and theme -->
+	<link rel="shortcut icon" href="../assets/img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-icon-180x180.png">
+	<meta name="theme-color" content="#2f55d4">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css" type="text/css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="../assets/css/style.min.css" type="text/css">
+	<link rel="stylesheet" href="../assets/css/highlight.min.css" type="text/css">
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+</head>
+<body data-spy="scroll">
+<nav id="navbar" class="navbar-fixed-top navbar-transparent">
+	<div class="container">
+		<a class="logo" href="../index.html">
+			noSQL
+		</a>
+		<div class="menu-extras">
+			<div class="menu-item">
+				<a class="navbar-toggle">
+					<div class="lines">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="home-button">
+			<a href="../index.html" class="btn btn-primary">Главная страница</a>
+		</div>
+		<div id="navigation">
+			<ul class="navigation-menu">
+				<li>
+					<a class="nav-link" href="#term">Определения</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#differences">Отличительные особенности</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#language">Язык запросов</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<header class="bg-half bg-light d-table w-100">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10">
+				<div class="title-heading text-center mt-4">
+					<img src="../assets/img/compare.png" alt="" height="250">
+					<h1 class="heading mb-3 mt-5">Сравнение с реляционными базами данных</h1>
+					<p class="para-desc mx-auto text-muted">Аналитическое сравнение реляционных (SQL) и нереляционных
+						баз данных (NoSQL).</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+	<section id="term" class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<div class="section-title text-center mb-4 pb-2">
+						<h2 class="mb-4">Что такое реляционные и нереляционные базы данных</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-5 col-md-6 mt-4 pt-2">
+					<img src="../assets/img/tables-relationships.svg" alt="">
+				</div>
+				<div class="col-lg-7 col-md-6 mt-4 pt-2">
+					<div class="section-title ml-lg-5">
+						<h4 class="title mb-4">SQL</h4>
+						<p class="text-justify"><strong>Реляционная база данных (SQL)</strong> — база, где данные хранятся
+							в
+							формате таблиц, они
+							строго структурированы и связаны друг с другом. В таблице есть строки и столбцы, каждая
+							строка
+							представляет отдельную запись, а столбец — поле с назначенным ей типом данных. В каждой
+							ячейке
+							информация записана по шаблону.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-100 mt-60">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-7 col-md-6 mt-4 pt-2">
+					<div class="section-title ml-lg-5">
+						<h4 class="title mb-4">NoSQL</h4>
+						<p class="text-justify"><strong>Нереляционная база данных (NoSQL)</strong> — хранит данные без
+							четких
+							связей друг с
+							другом и четкой структуры. Вместо структурированных таблиц внутри базы находится множество
+							разнородных документов, в том числе изображения, видео и даже публикации в социальных сетях.
+							В
+							отличие от реляционных БД, NoSQL базы данных не поддерживают запросы SQL.</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6 mt-4 pt-2 float-right">
+					<img src="../assets/img/json-files.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="differences" class="section bg-light">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<div class="section-title mb-4 pb-2">
+						<h2 class="title mb-4">Отличительные особенности</h2>
+						<p class="text-muted para-desc mx-auto mb-0">Для представления общей картины давайте сравним эти
+							два типа СУБД.</p>
+					</div>
+				</div>
+			</div>
+			<table class="table table-striped table-responsive-md">
+				<tbody>
+				<tr>
+					<th></th>
+					<th class="text-center"><strong>NoSQL (нереляционные базы данных)</strong></th>
+					<th class="text-center"><strong>SQL (реляционные базы данных)</strong></th>
+				</tr>
+				<tr>
+					<th>Предназначение</th>
+					<td>
+						<ul>
+							<li>Обработка крупных, не связанных между собой, неопределенных или быстро меняющихся
+								данных.
+							</li>
+							<li>Не зависящие от схемы данные или схема, задаваемая приложением.</li>
+							<li>Приложения, для которых производительность и доступность важнее, чем строгая
+								согласованность.
+							</li>
+							<li>Непрерывно работающие приложения, которые обслуживают пользователей по всему миру.</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Обработка реляционных данных с логичными и обособленными требованиями, которые можно
+								определить заранее.
+							</li>
+							<li>Схема, которую требуется хранить, поддерживая синхронизацию между приложением и базой
+								данных.
+							</li>
+							<li>Устаревшие системы, предназначенные для реляционных структур.</li>
+							<li>Приложения, требующие использования сложных запросов или многострочных транзакций.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>Сценарии</th>
+					<td>
+						<ul>
+							<li>Мобильные приложения.</li>
+							<li>Аналитика в реальном времени.</li>
+							<li>Управление содержимым.</li>
+							<li>Персонализация.</li>
+							<li>Приложения Интернета вещей.</li>
+							<li>Перенос баз данных.</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Бухгалтерские, финансовые и банковские системы.</li>
+							<li>Системы управления запасами.</li>
+							<li>Системы управления транзакциями.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>Маштабирование</th>
+					<td>
+						<ul>
+							<li>Горизонтальное масштабирование данных путем сегментирования между серверами.</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Вертикальное масштабирование данных путем повышения серверной нагрузки.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>Модель данных</th>
+					<td>
+						<ul>
+							<li>Типы баз данных: ключ-значение, базы данных документов, столбчатые и графовые базы
+								данных.
+							</li>
+							<li>Хранение данных в зависимости от типа базы данных.</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Тип базы данных: таблицы строк, сгруппированные по связям.</li>
+							<li>Использование языка SQL.</li>
+							<li>Данные хранятся в виде строк таблиц. Связанные данные хранятся отдельно и объединяются
+								для
+								сложных запросов.
+							</li>
+						</ul>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<section id="language" class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<div class="section-title mb-4 pb-2">
+						<h4 class="title mb-4">Сравнение языка запросов</h4>
+						<p class="text-muted para-desc mx-auto mb-0">Ниже приведены несколько примеров SQL запросов и их
+							сопоставления с NoSQL СУБД MongoDB.</p>
+					</div>
+				</div>
+			</div>
+			<table class="table table-striped table-responsive-lg">
+				<tbody>
+				<tr>
+					<th></th>
+					<th class="text-center"><strong>SQL</strong></th>
+					<th class="text-center"><strong>MongoDB</strong></th>
+				</tr>
+				<tr>
+					<th>Создание таблицы</th>
+					<td><pre><code class="sql">CREATE TABLE users (
+user_id VARCHAR(20) NOT NULL,
+age INTEGER NOT NULL,
+status VARCHAR(10));</code></pre>
+					</td>
+					<td class="text-center"><strong>Нет необходимости</strong></td>
+				</tr>
+				<tr>
+					<th>Добавление записи</th>
+					<td><pre><code class="sql">INSERT INTO users(user_id, age, status)
+VALUES ('bcd001', 45, "A");</code></pre>
+					</td>
+					<td><pre><code class="javascript">db.users.insert({
+  user_id: "bcd001",
+  age: 45,
+  status: "A"
+})</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<th>Получние данных</th>
+					<td><pre><code class="sql">SELECT *
+FROM users;</code></pre>
+					</td>
+					<td>
+						<pre><code class="javascript">db.users.find()</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<th>Обновление данных</th>
+					<td><pre><code class="sql">UPDATE users
+SET status = 'C'
+WHERE age &gt; 25;</code></pre>
+					</td>
+					<td><pre><code class="javascript">db.users.update(
+    { age: { $gt: 25 } },
+    { $set: { status: "C" } },
+    { multi: true }
+)</code></pre>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<p class="text-center">Источник: официальная документация <span class="font-weight-bold"><a
+					href="https://docs.mongodb.com/manual/reference/sql-comparison/" class="text-primary"
+					target="_blank">СУБД MongoDB</a></span></p>
+		</div>
+	</section>
+	<section class="section bg-light">
+		<div class="container mt-100 mt-60">
+			<div class="row align-items-center">
+				<div class="col-lg-5 col-md-6 order-1 order-md-2">
+					<div class="card features explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+						<div class="icons rounded h2 text-center text-primary px-3">
+							<i class="fas fa-tasks"></i>
+						</div>
+						<div class="card-body p-0 content">
+							<h5 class="title text-dark mt-4">Плюсы и минусы NoSQL</h5>
+							<p class="text-muted">Чем хороши и плохи нереляционные базы данных: главные достоинства
+								и недостатки</p>
+							<a href="pros-cons.html" class="text-primary">Читать <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0">
+					<div class="section-title text-md-left text-center">
+						<h4 class="title mb-4">Дополительный материал</h4>
+						<p class="text-muted mb-0 para-desc">Рекомендуем также прочитать следующую статью, чтобы<br/>лучше
+							разобраться в данной теме.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="text-center py-3 border-top">
+	<div class="copyright">
+		&copy;
+		<script>
+			document.write(new Date().getFullYear())
+		</script>
+		Danil Vorozheykin
+	</div>
+</footer>
+<a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i class="fas fa-arrow-up"></i></a>
+<script src="../assets/js/jquery/jquery.min.js"></script>
+<script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/js/highlight.pack.js"></script>
+<script src="../assets/js/scripts.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

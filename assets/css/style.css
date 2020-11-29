@@ -24,7 +24,7 @@ button:focus {
 	padding: 100px 0
 }
 
-#topnav {
+#navbar {
 	position: fixed;
 	right: 0;
 	left: 0;
@@ -35,7 +35,7 @@ button:focus {
 	transition: all .5s ease
 }
 
-#topnav .logo {
+#navbar .logo {
 	float: left;
 	color: #3c4858 !important;
 	font-weight: 700;
@@ -45,7 +45,7 @@ button:focus {
 	line-height: 68px
 }
 
-#topnav .navbar-toggle {
+#navbar .navbar-toggle {
 	position: relative;
 	width: 60px;
 	border: 0;
@@ -54,7 +54,7 @@ button:focus {
 	cursor: pointer
 }
 
-#topnav .navbar-toggle .lines {
+#navbar .navbar-toggle .lines {
 	width: 25px;
 	display: block;
 	position: relative;
@@ -62,7 +62,7 @@ button:focus {
 	height: 18px
 }
 
-#topnav .navbar-toggle span {
+#navbar .navbar-toggle span {
 	height: 2px;
 	width: 100%;
 	background-color: #3c4858;
@@ -71,39 +71,39 @@ button:focus {
 	transition: transform .5s ease
 }
 
-#topnav .navbar-toggle.open span {
+#navbar .navbar-toggle.open span {
 	position: absolute
 }
 
-#topnav .navbar-toggle.open span:first-child {
+#navbar .navbar-toggle.open span:first-child {
 	top: 6px;
 	transform: rotate(45deg)
 }
 
-#topnav .navbar-toggle.open span:nth-child(2) {
+#navbar .navbar-toggle.open span:nth-child(2) {
 	visibility: hidden
 }
 
-#topnav .navbar-toggle.open span:last-child {
+#navbar .navbar-toggle.open span:last-child {
 	width: 100%;
 	top: 6px;
 	transform: rotate(-45deg)
 }
 
-#topnav .navigation-menu {
+#navbar .navigation-menu {
 	list-style: none;
 	margin: 0;
 	padding: 0
 }
 
-#topnav .navigation-menu > li {
+#navbar .navigation-menu > li {
 	float: left;
 	display: block;
 	position: relative;
 	margin: 0 10px
 }
 
-#topnav .navigation-menu > li > a {
+#navbar .navigation-menu > li > a {
 	display: block;
 	color: #3c4858;
 	font-size: 13px;
@@ -118,101 +118,92 @@ button:focus {
 	padding-right: 8px
 }
 
-#topnav .navigation-menu > li > a:hover, #topnav .navigation-menu > li > a.active {
+#navbar .navigation-menu > li > a:hover, #navbar .navigation-menu > li > a.active {
 	color: #2f55d4 !important
 }
 
-#topnav .menu-extras {
+#navbar .menu-extras {
 	float: right
 }
 
-#topnav.nav-sticky {
+#navbar.nav-sticky {
 	background: #ffffff;
 	box-shadow: 0 0 3px rgba(22, 28, 45, 0.15)
 }
 
 @media (min-width: 992px) {
-	#topnav .navigation-menu {
+	#navbar .navigation-menu {
 		display: flex;
 		justify-content: flex-end
 	}
 
-	#topnav .navigation-menu.navigation-menu-center {
-		justify-content: center !important
-	}
-
-	#topnav .navigation-menu > li > a {
+	#navbar .navigation-menu > li > a {
 		padding-top: 25px;
 		padding-bottom: 25px;
 		min-height: 62px
 	}
 
-	#topnav .navigation-menu > li:hover > a,
-	#topnav .navigation-menu > li.active > a {
+	#navbar .navigation-menu > li:hover > a,
+	#navbar .navigation-menu > li.active > a {
 		color: #2f55d4 !important
 	}
 
-	#topnav .navigation-menu.nav-light > li > a {
+	#navbar .navigation-menu.nav-light > li > a {
 		color: #f8f9fc
 	}
 
-	#topnav .navbar-toggle {
+	#navbar .navbar-toggle {
 		display: none
 	}
 
-	#topnav #navigation {
+	#navbar #navigation {
 		display: block !important
 	}
 }
 
 @media (max-width: 991px) {
-	#topnav {
+	#navbar {
 		background-color: #ffffff;
 		box-shadow: 0 0 3px rgba(22, 28, 45, 0.15);
 		min-height: 74px
 	}
 
-	#topnav .container {
+	#navbar .container {
 		width: auto
 	}
 
-	#topnav #navigation {
+	#navbar #navigation {
 		max-height: 400px
 	}
 
-	#topnav .navigation-menu {
+	#navbar .navigation-menu {
 		float: none
 	}
 
-	#topnav .navigation-menu > li {
+	#navbar .navigation-menu > li {
 		float: none
 	}
 
-	#topnav .navigation-menu > li > a {
+	#navbar .navigation-menu > li > a {
 		color: #3c4858;
 		padding: 10px 20px
 	}
 
-	#topnav .navigation-menu > li > a:after {
+	#navbar .navigation-menu > li > a:after {
 		position: absolute;
 		right: 15px
 	}
 
-	#topnav .navigation-menu > li a:hover,
-	#topnav .navigation-menu > li.has-submenu.open > a {
+	#navbar .navigation-menu > li a:hover{
 		color: #2f55d4
 	}
 
-	#topnav .menu-extras .menu-item {
+	#navbar .menu-extras .menu-item {
 		border-color: #8492a6
 	}
-
-	#topnav .navbar-header {
-		float: left
-	}
-
-	#topnav .has-submenu.active a {
-		color: #2f55d4
+	
+	#navbar .home-button {
+		display: none
 	}
 
 	#navigation {
@@ -235,30 +226,12 @@ button:focus {
 	}
 }
 
-@media (min-width: 768px) {
-	.navbar-toggle {
-		display: block
-	}
-}
-
 .bg-half-170 {
 	padding: 170px 0;
 	background-size: cover;
 	align-self: center;
 	position: relative;
 	background-position: center center
-}
-
-@media (max-width: 1200px) {
-	#img-slider {
-		height: 300px
-	}
-}
-
-@media (min-width: 1200px) {
-	#img-slider {
-		height: 445px
-	}
 }
 
 .bg-overlay {
@@ -309,10 +282,6 @@ button:focus {
 	padding: 1.5rem
 }
 
-.work-process .title {
-	font-size: 20px
-}
-
 .text-muted {
 	color: #8492a6 !important
 }
@@ -352,6 +321,10 @@ button:focus {
 	height: 20px;
 	background: rgba(47, 85, 212, 0.1);
 	line-height: 20px
+}
+
+.features .title {
+    font-size: 18px;
 }
 
 .features .icons {
@@ -412,4 +385,58 @@ button:focus {
 	display: block;
 	overflow-x: auto;
 	padding: .5em
+}
+
+#navbar .home-button {
+	float: right;
+	line-height: 68px
+}
+
+@media (min-width: 992px) {
+	#navbar .home-button {
+		padding-left: 15px;
+		margin-left: 15px
+	}
+}
+
+.btn-primary {
+	background-color: #2f55d4 !important;
+	border: 1px solid #2f55d4 !important;
+	color: #ffffff !important;
+	-webkit-box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+	box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3)
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.focus {
+	background-color: #2443ac !important;
+	border-color: #2443ac !important;
+	color: #ffffff !important
+}
+
+@media (min-width: 768px) {
+	.navbar-toggle {
+		display: block
+	}
+}
+
+@media (max-width: 1200px) {
+	#img-slider {
+		height: 300px
+	}
+}
+
+@media (min-width: 1200px) {
+	#img-slider {
+		height: 445px
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#where .features {
+		height: 232px;
+	}
+
+	#materials .features {
+		height: 350px;
+	}
 }
